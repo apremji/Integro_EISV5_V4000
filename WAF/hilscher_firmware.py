@@ -25,11 +25,11 @@ hilscher_tooldir = os.path.abspath(os.path.dirname(__file__))
 # waf buildsystem related hooks to initialize this module
 def options(opt):
     global hilscher_tooldir
-    opt.load('hilscher_libsused', tooldir = os.path.relpath(hilscher_tooldir, opt.root.abspath()))
+    opt.load('hilscher_libsused', tooldir = os.path.relpath(hilscher_tooldir, opt.path.abspath()))
 
 def configure(conf):
     global hilscher_tooldir
-    conf.load('hilscher_libsused', tooldir = os.path.relpath(hilscher_tooldir, conf.root.abspath()))
+    conf.load('hilscher_libsused', tooldir = os.path.relpath(hilscher_tooldir, conf.path.abspath()))
 
 
 def display_findings(bld):
