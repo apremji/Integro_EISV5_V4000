@@ -1,0 +1,40 @@
+Target:  X090H000.nxi
+Version: V5.3.0.1
+
+Used Libraries
+==============
+
+armv7em-ecoscentric-ecospro-eabi/7.3.0d
+---------------------------------------
+libconfigmanager.a            V1.5.0.0  ConfigManager 
+libdrv_eth_2ps_netx90.a       V1.6.0.0  DrvEth Adapter 2PS netX90 
+libdrveth.a                   V1.11.0.0 DrvEth 
+libdrveth_gci.a               V1.2.0.0  DrvEth GCI 
+libdrvphy.a                   V1.0.0.1  DrvPhy 
+libeip_eif.a                  V3.7.0.1  Common EtherNet/IP Interface Library common library for netX 90
+libeip_gci_core.a             V3.7.0.1  EtherNetIP GCI core library for netX 90
+libeip_netx.a                 V3.7.0.1  EtherNet/IP 
+libfirmwaretoolbox.a          V1.1.1.0  FirmwareToolbox 
+libgeneric_ap.a               V1.3.0.1  Generic AP 
+libhal_toolbox.a              V1.6.0.0  HAL Toolbox 
+liblldp.a                     V5.4.0.0  LLDP 
+liblwip.a                     V5.1.0.3  lwIP based IP stack 
+liblwip_netident.a            V5.1.0.3  lwIP based IP stack 
+liblwip_ngsnmp.a              V5.1.0.3  lwIP based IP stack 
+liblwip_socketapigci.a        V5.1.0.3  lwIP based Socket API (GCI) 
+libmarshaller.a               V2.0.0.0  netX Marshaller 
+libmiddleware.a               V2.0.0.1  Middleware Library 
+libnetx_toolbox_netx90.a      V1.7.0.0  netX Toolbox 
+libosal_ecospro.a             V2.3.0.1  OSAL 
+libps_toolbox.a               V1.6.0.0  PS Toolbox 
+libptp_netx.a                 V2.4.0.0  PTP 
+libptp_platform_ecos_netx90.a V2.4.0.0  Precision Time Protocol library for netX90 (eCos dependent)
+libstorage.a                  V2.0.0.1  eCos Storage Library 
+libtarget.a                   V2.0.0.4  eCos  
+libwebifgci.a                 V1.3.0.0  WebIf_GCI
+libwebserver.a                V1.3.0.0  HTTP Web Server 
+libwebserver_configurations.a V1.3.0.0  WebServer Configurations
+
+Selected Environment variables
+==============================
+SPC_BUILDTOOLS_REV=SPC-BuildToolsRev.30
