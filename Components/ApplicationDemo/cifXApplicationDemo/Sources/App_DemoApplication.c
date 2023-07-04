@@ -250,14 +250,12 @@ void App_IODataHandler(void* ptAppResources)
     /** OUTPUT DATA ***************************************/
     /** update output data image to be sent in this cycle */
 
-    HOSTAL_Sensor_GetData(0, &ptAppData->tOutputData.usSensor_1_Output);
-    ptAppData->tOutputData.bSensor_1_State = HOSTAL_Sensor_GetState(0, &ptAppData->tAcyclicData.usSensor1_StatusCode);
-
-    HOSTAL_Sensor_GetData(1, &ptAppData->tOutputData.usSensor_2_Output);
-    ptAppData->tOutputData.bSensor_2_State = HOSTAL_Sensor_GetState(1, &ptAppData->tAcyclicData.usSensor2_StatusCode);
-
-    ptAppData->tOutputData.bActuator_1_State = HOSTAL_Actuator_GetState(0, &ptAppData->tAcyclicData.usActuator1_StatusCode);
-    ptAppData->tOutputData.bActuator_2_State = HOSTAL_Actuator_GetState(1, &ptAppData->tAcyclicData.usActuator2_StatusCode);
+    ptAppData->tOutputData.usSensor_1_Output = 0xAA;
+    ptAppData->tOutputData.bSensor_1_State   = 0xBB;
+    ptAppData->tOutputData.usSensor_2_Output = 0xCC;
+    ptAppData->tOutputData.bSensor_2_State   = 0xDD;
+    ptAppData->tOutputData.bActuator_1_State = 0xEE;
+    ptAppData->tOutputData.bActuator_2_State = 0xFF;
 
     lRet = xChannelIOWrite(ptAppData->aptChannels[0]->hChannel, 0, 0, sizeof(ptAppData->tOutputData), &ptAppData->tOutputData, 0);
     if(lRet != CIFX_NO_ERROR)
